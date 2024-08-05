@@ -1,0 +1,4 @@
+/Users/toxinmac/develop/task/build/CMakeFiles/Server.dir
+/Users/toxinmac/develop/task/build/CMakeFiles/Client.dir
+/Users/toxinmac/develop/task/build/CMakeFiles/edit_cache.dir
+/Users/toxinmac/develop/task/build/CMakeFiles/rebuild_cache.dir

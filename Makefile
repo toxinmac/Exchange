@@ -37,7 +37,19 @@ leaks_check: test
 test:
 	@$(CC) $(CFLAGS) $(SERVER_TEST) -lgtest_main -lgtest -o $(EXECUTABLE) && ./$(EXECUTABLE)
 
-run:
+run_test:
 	./$(EXECUTABLE)
+
+run:
+	@if [ -d build ]; then rm -rf build; fi
+	@mkdir build
+	@cd build && cmake .. && cmake --build .
+run_server:
+	@cd build  && ./Server
+run_client:
+	@cd build && ./Client
+
+
+
 
 .PHONY: all clean leaks_check run
